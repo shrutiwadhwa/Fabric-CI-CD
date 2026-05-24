@@ -37,8 +37,12 @@
 
 sales_data=[
     (1,"laptop",50000),
-    (2," ")
+    (2," Phone",30000),
+    (3,"Tablet",20000)
 ]
+columns=["id","product","sales"]
+sales_df=spark.createDataFrame(sales_data,columns)
+sales_df.show()
 
 # METADATA ********************
 
@@ -46,6 +50,11 @@ sales_data=[
 # META   "language": "python",
 # META   "language_group": "synapse_pyspark"
 # META }
+
+# MARKDOWN ********************
+
+# Testing Changes
+
 
 # CELL ********************
 

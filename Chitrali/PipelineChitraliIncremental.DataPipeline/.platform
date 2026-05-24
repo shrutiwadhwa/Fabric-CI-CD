@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "PipelineChitraliIncremental",
+    "description": ""
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "79175fe9-a830-9cd4-49f0-b8b77756f0ee"
+  }
+}

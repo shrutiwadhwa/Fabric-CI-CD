@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "Fabrictosnowflake"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ec30c4db-450e-a21a-47de-ed7a70da7676"
+  }
+}

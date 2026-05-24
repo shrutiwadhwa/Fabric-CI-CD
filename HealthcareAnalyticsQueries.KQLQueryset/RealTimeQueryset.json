@@ -1,0 +1,22 @@
+{
+  "queryset": {
+    "version": "1.0.0",
+    "dataSources": [
+      {
+        "id": "907727cb-f41c-46e3-8045-6ba680e930cb",
+        "clusterUri": "",
+        "type": "Fabric",
+        "databaseItemId": "86ff0361-69b8-87eb-43c7-33e32b7cc936",
+        "databaseItemName": "HealthcareKQLDB"
+      }
+    ],
+    "tabs": [
+      {
+        "id": "f20f3190-661c-4c42-8f91-da27d6eb69bd",
+        "content": "patient_telemetry\n| take 10\n\npatient_telemetry\n| summarize AvgBikes=avg(No_Bikes) by Neighbourhood\n| order by AvgBikes desc\n\npatient_telemetry\n| where No_Bikes < 5\n| project BikepointID, Street, No_Bikes",
+        "title": "Tab",
+        "dataSourceId": "907727cb-f41c-46e3-8045-6ba680e930cb"
+      }
+    ]
+  }
+}

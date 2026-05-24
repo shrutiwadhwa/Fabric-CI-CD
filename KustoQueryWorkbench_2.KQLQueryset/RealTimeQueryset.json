@@ -1,0 +1,22 @@
+{
+  "queryset": {
+    "version": "1.0.0",
+    "dataSources": [
+      {
+        "id": "7ab01c45-3185-458d-8b5b-de51bc5d8891",
+        "clusterUri": "",
+        "type": "Fabric",
+        "databaseItemId": "86ff0361-69b8-87eb-43c7-33e32b7cc936",
+        "databaseItemName": "HealthcareKQLDB"
+      }
+    ],
+    "tabs": [
+      {
+        "id": "7418c9e7-c680-4340-97e8-f3fa5d3b9281",
+        "content": "patient_telemetry\n| project-away Longitude",
+        "title": "Tab",
+        "dataSourceId": "7ab01c45-3185-458d-8b5b-de51bc5d8891"
+      }
+    ]
+  }
+}

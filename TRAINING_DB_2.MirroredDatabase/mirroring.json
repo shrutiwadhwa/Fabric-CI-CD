@@ -1,0 +1,37 @@
+{
+  "properties": {
+    "source": {
+      "type": "Snowflake",
+      "typeProperties": {
+        "connection": "f1fde62b-3546-4d1a-8f36-f8a3050c6184",
+        "database": "TRAINING_DB",
+        "externalStorages": [
+          {
+            "type": "AzureDataLakeStorage",
+            "typeProperties": {
+              "connection": "bda20ee3-58c0-4434-9dce-88e77beb4987"
+            }
+          }
+        ],
+        "filterRules": [
+          {
+            "target": "objectType",
+            "action": "allow",
+            "values": [
+              "Table",
+              "IcebergTable"
+            ]
+          }
+        ]
+      }
+    },
+    "target": {
+      "type": "MountedRelationalDatabase",
+      "typeProperties": {
+        "defaultSchema": "dbo",
+        "format": "Delta",
+        "retentionInDays": 1
+      }
+    }
+  }
+}

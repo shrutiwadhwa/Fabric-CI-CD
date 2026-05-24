@@ -1,0 +1,27 @@
+[
+  {
+    "name": "tavantabhasday3",
+    "path": "/Files/external",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "0aeace4c-5534-423e-9919-392ab6604430",
+        "location": "https://abhasadlsday2.dfs.core.windows.net",
+        "subpath": "/tavantabhasday3"
+      }
+    }
+  },
+  {
+    "name": "banking_lakehouse",
+    "path": "/Files",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Files/banking_lakehouse",
+        "itemId": "003baae6-f59d-9efe-41b0-5a54d66ebfa3",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "Lakehouse"
+      }
+    }
+  }
+]

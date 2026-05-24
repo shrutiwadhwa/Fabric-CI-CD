@@ -1,0 +1,259 @@
+{
+  "schema_version": 74,
+  "tiles": [
+    {
+      "id": "94b3c3a4-cb11-4b5b-b9a4-11da48c55731",
+      "title": "Bike Availability by Neighborhood",
+      "visualType": "bar",
+      "pageId": "eb9aab99-b68a-42e5-8aa5-382e48d7cc82",
+      "layout": {
+        "x": 1,
+        "y": 8,
+        "width": 10,
+        "height": 9
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "19931118-f2b9-44e2-b934-e81ba61dd744"
+      },
+      "visualOptions": {
+        "multipleYAxes": {
+          "base": {
+            "id": "-1",
+            "label": "",
+            "columns": [],
+            "yAxisMaximumValue": null,
+            "yAxisMinimumValue": null,
+            "yAxisScale": "linear",
+            "horizontalLines": []
+          },
+          "additional": [],
+          "showMultiplePanels": false
+        },
+        "seriesColors": {},
+        "hideLegend": false,
+        "legendLocation": "bottom",
+        "xColumnTitle": "",
+        "xColumn": null,
+        "yColumns": null,
+        "seriesColumns": null,
+        "xAxisScale": "linear",
+        "verticalLine": "",
+        "crossFilter": [],
+        "crossFilterDisabled": false,
+        "drillthroughDisabled": false,
+        "forceAxisTicks": false,
+        "drillthrough": []
+      }
+    },
+    {
+      "id": "6f44273f-1ed1-4560-a203-dc6c464b8fec",
+      "title": "Critical Low Bike Stations",
+      "visualType": "table",
+      "pageId": "eb9aab99-b68a-42e5-8aa5-382e48d7cc82",
+      "layout": {
+        "x": 11,
+        "y": 0,
+        "width": 11,
+        "height": 8
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "a4bf5e95-a4ae-4e0a-9ed1-661c86399a55"
+      },
+      "visualOptions": {
+        "table__enableRenderLinks": true,
+        "colorRulesDisabled": true,
+        "crossFilter": [],
+        "crossFilterDisabled": false,
+        "drillthroughDisabled": false,
+        "drillthrough": [],
+        "table__renderLinks": [],
+        "colorRules": []
+      }
+    },
+    {
+      "id": "9ff8ac1a-f89b-4dc1-ad6a-7c21000623de",
+      "title": "Station Distribution",
+      "visualType": "pie",
+      "pageId": "eb9aab99-b68a-42e5-8aa5-382e48d7cc82",
+      "layout": {
+        "x": 11,
+        "y": 8,
+        "width": 11,
+        "height": 9
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "155d1b3a-8e6c-40d5-bf65-b003b5fc0e64"
+      },
+      "visualOptions": {
+        "hideLegend": false,
+        "legendLocation": "bottom",
+        "xColumn": null,
+        "yColumns": null,
+        "seriesColumns": null,
+        "crossFilter": [],
+        "crossFilterDisabled": false,
+        "drillthroughDisabled": false,
+        "labelDisabled": false,
+        "pie__label": [
+          "name",
+          "percentage"
+        ],
+        "tooltipDisabled": false,
+        "pie__tooltip": [
+          "name",
+          "percentage",
+          "value"
+        ],
+        "pie__orderBy": "size",
+        "pie__kind": "pie",
+        "pie__topNSlices": null,
+        "seriesColors": {},
+        "drillthrough": []
+      }
+    },
+    {
+      "id": "4ee72186-1237-4707-9577-79fbc49a3cc1",
+      "title": "Total Active Stations",
+      "visualType": "card",
+      "pageId": "eb9aab99-b68a-42e5-8aa5-382e48d7cc82",
+      "layout": {
+        "x": 5,
+        "y": 5,
+        "width": 5,
+        "height": 3
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "f0154508-ca7b-4f57-9b00-07e0d6f4bd4b"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "multiStat__valueColumn": null,
+        "colorRulesDisabled": false,
+        "colorRules": []
+      }
+    },
+    {
+      "id": "100cb591-c100-434c-ad55-c22d49f8ae53",
+      "title": "Average Available Bikes",
+      "visualType": "card",
+      "pageId": "eb9aab99-b68a-42e5-8aa5-382e48d7cc82",
+      "layout": {
+        "x": 1,
+        "y": 5,
+        "width": 4,
+        "height": 3
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "4b7749e6-e877-4447-80f8-c3c3e517d5a5"
+      },
+      "visualOptions": {
+        "multiStat__textSize": "auto",
+        "multiStat__valueColumn": null,
+        "colorRulesDisabled": false,
+        "colorRules": []
+      }
+    },
+    {
+      "id": "27572e0e-9ee3-4771-975c-a1513d2b5a13",
+      "title": "Dashboard",
+      "visualType": "markdownCard",
+      "pageId": "eb9aab99-b68a-42e5-8aa5-382e48d7cc82",
+      "layout": {
+        "x": 1,
+        "y": 0,
+        "width": 9,
+        "height": 5
+      },
+      "markdownText": "# 🚴 Bicycle Real-Time Analytics System\n\n## Live Operational Monitoring Dashboard",
+      "visualOptions": {}
+    }
+  ],
+  "baseQueries": [],
+  "parameters": [
+    {
+      "kind": "duration",
+      "id": "d87dc066-e25b-440f-afbe-ce93a6edfc21",
+      "displayName": "Time range",
+      "description": "",
+      "beginVariableName": "_startTime",
+      "endVariableName": "_endTime",
+      "defaultValue": {
+        "kind": "dynamic",
+        "count": 1,
+        "unit": "hours"
+      },
+      "showOnPages": {
+        "kind": "all"
+      }
+    }
+  ],
+  "dataSources": [
+    {
+      "kind": "kusto-trident",
+      "clusterUri": "",
+      "name": "HealthcareKQLDB",
+      "databaseArtifactId": "2b7cc936-33e3-43c7-87eb-69b886ff0361",
+      "database": "86ff0361-69b8-87eb-43c7-33e32b7cc936",
+      "workspace": "00000000-0000-0000-0000-000000000000",
+      "id": "23aa2e98-a459-4d68-bba9-4d82af6ac524"
+    }
+  ],
+  "pages": [
+    {
+      "name": "Page 1",
+      "id": "eb9aab99-b68a-42e5-8aa5-382e48d7cc82"
+    }
+  ],
+  "queries": [
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "23aa2e98-a459-4d68-bba9-4d82af6ac524"
+      },
+      "text": "patient_telemetry\r\n| summarize AvgBikes=avg(No_Bikes) by Neighbourhood\r\n| order by AvgBikes desc",
+      "id": "19931118-f2b9-44e2-b934-e81ba61dd744",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "23aa2e98-a459-4d68-bba9-4d82af6ac524"
+      },
+      "text": "patient_telemetry\r\n| where No_Bikes < 5\r\n| project BikepointID, Street, No_Bikes\r\n",
+      "id": "a4bf5e95-a4ae-4e0a-9ed1-661c86399a55",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "23aa2e98-a459-4d68-bba9-4d82af6ac524"
+      },
+      "text": "patient_telemetry\r\n| summarize count() by Neighbourhood",
+      "id": "155d1b3a-8e6c-40d5-bf65-b003b5fc0e64",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "23aa2e98-a459-4d68-bba9-4d82af6ac524"
+      },
+      "text": "patient_telemetry\r\n| summarize TotalStations=count()",
+      "id": "f0154508-ca7b-4f57-9b00-07e0d6f4bd4b",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "23aa2e98-a459-4d68-bba9-4d82af6ac524"
+      },
+      "text": "patient_telemetry\r\n| summarize AvgBikes=avg(No_Bikes)",
+      "id": "4b7749e6-e877-4447-80f8-c3c3e517d5a5",
+      "usedVariables": []
+    }
+  ]
+}

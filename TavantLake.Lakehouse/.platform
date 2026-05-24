@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "TavantLake"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "003baae6-f59d-9efe-41b0-5a54d66ebfa3"
+  }
+}

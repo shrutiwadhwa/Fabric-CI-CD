@@ -1,0 +1,63 @@
+[
+  {
+    "name": "trans",
+    "path": "/Files",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Files/trans",
+        "itemId": "47484909-1fa1-8b5f-40f2-1b31fcc50246",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "Lakehouse"
+      }
+    }
+  },
+  {
+    "name": "tavant-shruti",
+    "path": "/Files",
+    "target": {
+      "type": "AmazonS3",
+      "amazonS3": {
+        "connectionId": "57f76c14-5689-4cff-9235-68f5fb45c332",
+        "location": "s3://tavant-shruti",
+        "subpath": "/"
+      }
+    }
+  },
+  {
+    "name": "input",
+    "path": "/Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "bda20ee3-58c0-4434-9dce-88e77beb4987",
+        "location": "https://shruadls.dfs.core.windows.net",
+        "subpath": "/input"
+      }
+    }
+  },
+  {
+    "name": "hidden",
+    "path": "/Files",
+    "target": {
+      "type": "AmazonS3",
+      "amazonS3": {
+        "connectionId": "8165f1bd-4acd-4259-a7aa-0ee12968fd62",
+        "location": "s3://shruti-tavant-batch2",
+        "subpath": "/hidden"
+      }
+    }
+  },
+  {
+    "name": "data",
+    "path": "/Files",
+    "target": {
+      "type": "AmazonS3",
+      "amazonS3": {
+        "connectionId": "8165f1bd-4acd-4259-a7aa-0ee12968fd62",
+        "location": "s3://shruti-tavant-batch2",
+        "subpath": "/data"
+      }
+    }
+  }
+]

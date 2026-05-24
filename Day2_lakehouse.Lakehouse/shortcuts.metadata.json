@@ -1,0 +1,52 @@
+[
+  {
+    "name": "shruti",
+    "path": "/Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "160dee32-9669-4ac3-891e-b5979fbc13d1",
+        "location": "https://tavantstoragexternal.dfs.core.windows.net",
+        "subpath": "/shruti"
+      }
+    }
+  },
+  {
+    "name": "banking_lakehouse",
+    "path": "/Files/input",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Files/banking_lakehouse",
+        "itemId": "003baae6-f59d-9efe-41b0-5a54d66ebfa3",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "Lakehouse"
+      }
+    }
+  },
+  {
+    "name": "shortcutdemo",
+    "path": "/Files/external",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "a0b9a2fc-43b4-4aaa-ae6e-3b24cab80c68",
+        "location": "https://tavantdaythree.dfs.core.windows.net",
+        "subpath": "/shortcutdemo"
+      }
+    }
+  },
+  {
+    "name": "banking_lakehouse",
+    "path": "/Files/data-access",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Files/banking_lakehouse",
+        "itemId": "003baae6-f59d-9efe-41b0-5a54d66ebfa3",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "Lakehouse"
+      }
+    }
+  }
+]

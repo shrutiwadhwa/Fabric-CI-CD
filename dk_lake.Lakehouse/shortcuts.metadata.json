@@ -1,0 +1,27 @@
+[
+  {
+    "name": "containertest2026",
+    "path": "/Files/test_sortcut",
+    "target": {
+      "type": "AzureBlobStorage",
+      "azureBlobStorage": {
+        "connectionId": "45ee5fd0-d35b-4d05-a58c-9f277645468f",
+        "location": "https://deepaktavant2026.blob.core.windows.net",
+        "subpath": "/containertest2026"
+      }
+    }
+  },
+  {
+    "name": "banking_lakehouse",
+    "path": "/Files/test_sortcut",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Files/banking_lakehouse",
+        "itemId": "003baae6-f59d-9efe-41b0-5a54d66ebfa3",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "Lakehouse"
+      }
+    }
+  }
+]

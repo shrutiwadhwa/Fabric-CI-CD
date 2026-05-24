@@ -1,0 +1,27 @@
+[
+  {
+    "name": "shortcutdemo",
+    "path": "/Files/external",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "929b08dd-a549-4243-9960-80a8f3e60419",
+        "location": "https://test123chitrali.dfs.core.windows.net",
+        "subpath": "/shortcutdemo"
+      }
+    }
+  },
+  {
+    "name": "data-access",
+    "path": "/Files",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Files/data-access",
+        "itemId": "3ef43aac-3ea5-bd04-42de-e91929b159bf",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "Lakehouse"
+      }
+    }
+  }
+]

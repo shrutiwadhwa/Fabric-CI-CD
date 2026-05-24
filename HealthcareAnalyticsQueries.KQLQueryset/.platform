@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLQueryset",
+    "displayName": "HealthcareAnalyticsQueries",
+    "description": "HealthcareAnalyticsQueries"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3415c65e-cb8d-b61f-40e1-0ef6c2c25992"
+  }
+}

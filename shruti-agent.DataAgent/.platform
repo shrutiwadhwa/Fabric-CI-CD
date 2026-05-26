@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataAgent",
+    "displayName": "shruti-agent"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "cafbc424-bbda-9339-4b29-d3b0b1f9f140"
+  }
+}

@@ -11,6 +11,147 @@
     },
     "defaultPowerBIDataSourceVersion": "powerBI_V3",
     "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "credit_card_transactions",
+        "sourceLineageTag": "[dbo].[credit_card_transactions]",
+        "columns": [
+          {
+            "name": "transaction_id",
+            "dataType": "int64",
+            "sourceColumn": "transaction_id",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "transaction_id",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "transaction_ts",
+            "dataType": "dateTime",
+            "sourceColumn": "transaction_ts",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "sourceLineageTag": "transaction_ts",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "card_number",
+            "dataType": "string",
+            "sourceColumn": "card_number",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "card_number",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "merchant_id",
+            "dataType": "string",
+            "sourceColumn": "merchant_id",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "merchant_id",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "amount",
+            "dataType": "decimal",
+            "sourceColumn": "amount",
+            "sourceProviderType": "decimal",
+            "sourceLineageTag": "amount",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "currency",
+            "dataType": "string",
+            "sourceColumn": "currency",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "currency",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "channel",
+            "dataType": "string",
+            "sourceColumn": "channel",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "channel",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "last_updated_ts",
+            "dataType": "dateTime",
+            "sourceColumn": "last_updated_ts",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "sourceLineageTag": "last_updated_ts",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "credit_card_transactions",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      }
+    ],
     "expressions": [
       {
         "name": "DatabaseQuery",

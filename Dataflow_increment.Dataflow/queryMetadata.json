@@ -1,0 +1,33 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "Dataflow_increment",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "incremental": {
+      "queryId": "a060f43a-97d2-4ef1-8089-d2654805465f",
+      "queryName": "incremental"
+    },
+    "incremental_DataDestination": {
+      "queryId": "88c9f843-6baf-43ca-a55b-b29878a62a24",
+      "queryName": "incremental_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "FabricSql",
+      "kind": "FabricSql",
+      "connectionId": "{\"ClusterId\":\"46da3797-a20f-44c6-9bba-39534c051528\",\"DatasourceId\":\"35fc2e7c-4771-429b-a459-94cd915a0c90\"}"
+    },
+    {
+      "path": "Warehouse",
+      "kind": "Warehouse",
+      "connectionId": "{\"ClusterId\":\"46da3797-a20f-44c6-9bba-39534c051528\",\"DatasourceId\":\"5d200e4d-8729-4deb-b25b-fe209653cdd0\"}"
+    }
+  ]
+}

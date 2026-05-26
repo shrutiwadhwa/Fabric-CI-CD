@@ -31,7 +31,7 @@
               "fileExtension": ".txt"
             },
             "storeSettings": {
-              "type": "LakehouseWriteSettings"
+              "type": "AzureBlobStorageWriteSettings"
             },
             "datasetSettings": {
               "type": "DelimitedText",
@@ -51,8 +51,8 @@
                 "properties": {
                   "type": "Lakehouse",
                   "typeProperties": {
-                    "artifactId": "309e5b3c-6055-44c4-9af6-a81ba0599936",
-                    "workspaceId": "b79aed05-325a-458e-8274-26078b75c2ff",
+                    "artifactId": "a0599936-a81b-9af6-44c4-6055309e5b3c",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
                     "rootFolder": "Files"
                   },
                   "annotations": []
@@ -79,8 +79,6 @@
           "secureOutput": false
         },
         "name": "Copy data1",
-        "state": "Inactive",
-        "onInactiveMarkAs": "Succeeded",
         "dependsOn": []
       },
       {
@@ -92,7 +90,7 @@
               "type": "DelimitedTextReadSettings"
             },
             "storeSettings": {
-              "type": "LakehouseReadSettings",
+              "type": "AzureBlobStorageReadSettings",
               "recursive": true,
               "enablePartitionDiscovery": false
             },
@@ -102,7 +100,7 @@
                 "location": {
                   "type": "LakehouseLocation",
                   "folderPath": "Bronze",
-                  "fileName": "2019.csv"
+                  "fileName": "2020.csv"
                 },
                 "columnDelimiter": ",",
                 "quoteChar": "\"",
@@ -115,8 +113,8 @@
                 "properties": {
                   "type": "Lakehouse",
                   "typeProperties": {
-                    "artifactId": "a0599936-a81b-9af6-44c4-6055309e5b3c",
-                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "artifactId": "309e5b3c-6055-44c4-9af6-a81ba0599936",
+                    "workspaceId": "b79aed05-325a-458e-8274-26078b75c2ff",
                     "rootFolder": "Files"
                   },
                   "annotations": []
@@ -163,6 +161,8 @@
           "secureOutput": false
         },
         "name": "Copy data2",
+        "state": "Inactive",
+        "onInactiveMarkAs": "Succeeded",
         "dependsOn": []
       }
     ]

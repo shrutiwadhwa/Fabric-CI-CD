@@ -1,0 +1,45 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "Dataflow_vip",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "DefaultDestination": {
+      "queryId": "da8f46ea-cea7-4357-8bb4-2c6cd6db7400",
+      "queryName": "DefaultDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "DefaultDestination_DataDestinationTransform": {
+      "queryId": "5a1c6460-5652-4d95-b816-3ff2de1029ad",
+      "queryName": "DefaultDestination_DataDestinationTransform",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Query": {
+      "queryId": "44b149c8-0c6b-4437-9b82-ff05f4bfcceb",
+      "queryName": "Query"
+    },
+    "Query_DataDestination": {
+      "queryId": "225d90e0-28f9-4289-ab87-133d57b9ba7f",
+      "queryName": "Query_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "https://shruadls.dfs.core.windows.net/",
+      "kind": "AzureDataLakeStorage",
+      "connectionId": "{\"ClusterId\":\"46da3797-a20f-44c6-9bba-39534c051528\",\"DatasourceId\":\"7464c021-4438-484e-a6ed-e6aaa46bc6ce\"}"
+    },
+    {
+      "path": "Warehouse",
+      "kind": "Warehouse",
+      "connectionId": "{\"ClusterId\":\"46da3797-a20f-44c6-9bba-39534c051528\",\"DatasourceId\":\"77bde2f1-dcec-46d1-842b-46dcebd1fa94\"}"
+    }
+  ]
+}

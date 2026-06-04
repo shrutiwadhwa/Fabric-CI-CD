@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SQLDatabase",
+    "displayName": "IncrementalData"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "da69d410-7333-99e6-447b-c66a626bb71c"
+  }
+}

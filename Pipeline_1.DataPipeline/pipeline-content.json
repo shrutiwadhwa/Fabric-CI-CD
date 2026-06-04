@@ -1,0 +1,60 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "c8f63181-3214-8a0f-4b2e-69ec6ba9a744",
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "parameters": {
+            "param_1": {
+              "value": "pipeline value here",
+              "type": "string"
+            },
+            "param_2": {
+              "value": "123",
+              "type": "int"
+            }
+          }
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "nb_fabric_de",
+        "dependsOn": []
+      },
+      {
+        "type": "SetVariable",
+        "typeProperties": {
+          "variableName": "nb_exit_value",
+          "value": {
+            "value": "@activity('nb_fabric_de').output.result.exitValue",
+            "type": "Expression"
+          }
+        },
+        "policy": {
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Set variable1",
+        "dependsOn": [
+          {
+            "activity": "nb_fabric_de",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      }
+    ],
+    "variables": {
+      "nb_exit_value": {
+        "type": "String"
+      }
+    }
+  }
+}

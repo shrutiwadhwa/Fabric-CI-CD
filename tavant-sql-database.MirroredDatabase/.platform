@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "MirroredDatabase",
+    "displayName": "tavant-sql-database"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5e62ee6f-0500-9a43-43c0-3ff1dc20e195"
+  }
+}

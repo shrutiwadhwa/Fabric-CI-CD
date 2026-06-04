@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "name": "fabric-data",
+    "path": "/Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "03de2b8f-8f2f-4146-a8ee-86acdc7c2419",
+        "location": "https://fabricstoragelab.dfs.core.windows.net",
+        "subpath": "/fabric-data"
+      }
+    }
+  }
+]
